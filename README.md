@@ -1,6 +1,6 @@
 # aicoder2048 · 语音目录
 
-> **给 AI 助手（Grok 等）的说明**：用户通常在开车时用语音跟你交流，会用「编号」或「中文昵称」指代下面的 repo、应用和文件，比如「1 号第 3 课」「2 号象棋的白皮书」「五子棋第 2 篇」。
+> **给 AI 助手（Grok 等）的说明**：用户通常在开车时用语音跟你交流，会用「编号」或「中文昵称」指代下面的 repo、应用和文件，比如「1 号第 3 课」「2 号象棋的白皮书」「五子棋第 2 篇」「讨论区第 7 篇」。
 > 请直接用表里的 **raw 链接** 读取内容，不要再让用户拼写 repo 名或目录路径。
 > 语音识别可能把英文名听错：例如「Teardown / 提了顿」指的是 **TillDone**，「py / 派」指的是 **Pi**。
 > 本页的纯文本版：https://raw.githubusercontent.com/aicoder2048/aicoder2048/main/README.md
@@ -10,7 +10,7 @@
 | 编号 | 中文昵称 | Repo | 简介 |
 |---|---|---|---|
 | 1 号 | 超级智能体课 | [learn-deepseek-super-agent](https://github.com/aicoder2048/learn-deepseek-super-agent) | 精读 DeepSeek《Super-agent 设计探索》的中文互动课，共 9 课 |
-| 2 号 | Pi 应用集 | [pi-vs-claude-code](https://github.com/aicoder2048/pi-vs-claude-code) | 基于 Pi Agent Harness 的几个应用：TillDone、中国象棋、五子棋 |
+| 2 号 | Pi 应用集 | [pi-vs-claude-code](https://github.com/aicoder2048/pi-vs-claude-code) | 基于 Pi Agent Harness 的几个应用：TillDone、中国象棋、五子棋，以及讨论区 |
 
 ---
 
@@ -34,13 +34,14 @@
 
 ## 2 号 · Pi 应用集（pi-vs-claude-code）
 
-应用都在 `apps/` 目录下，每个应用的文档在它自己的 `docs/` 目录里。
+应用都在 `apps/` 目录下，每个应用的文档在它自己的 `docs/` 目录里；讨论区在 `discussions/` 目录下。
 
 | 应用编号 | 中文昵称 | 应用目录 |
 |---|---|---|
 | 2-1 | 边牧 · TillDone（也可能被听成 Teardown） | apps/tilldone |
 | 2-2 | 楚河 · 中国象棋 | apps/chinese-chess |
 | 2-3 | 弈境 · 五子棋（Five LLM） | apps/five-llm |
+| 2-4 | 讨论区 | discussions |
 
 ### 2-1 · 边牧 TillDone 的文档
 
@@ -69,3 +70,22 @@
 | 第 1 篇 | L3 知识与决策信号重构 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/apps/five-llm/docs/l3-knowledge-refactor.md |
 | 第 2 篇 | L3 v2：候选的连续先手反证与提交前反馈 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/apps/five-llm/docs/forcing-review.md |
 | 第 3 篇 | L3 v3：己方强杀发现与提交前漏胜反馈 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/apps/five-llm/docs/own-forcing-win.md |
+
+### 2-4 · 讨论区（discussions）
+
+按时间顺序编号。
+
+| 篇 | 日期 | 标题 | raw 链接 |
+|---|---|---|---|
+| 第 1 篇 | 10-28 | 四层架构：用扩展搭自定义 Pi Agent Harness | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-10-28-four-layer-harness.md |
+| 第 2 篇 | 10-28 | L4 走向 Web / 桌面，“循环固定”与“一切皆插件”的取舍 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-10-28-l4-web-desktop-and-plugin-harness.md |
+| 第 3 篇 | 10-29 | TillDone 的中文名与核心比喻：边牧 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-10-29-tilldone-naming-border-collie.md |
+| 第 4 篇 | 10-30 | 五子棋人类胜局复盘：漏看连续先手 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-10-30-five-llm-human-win-review.md |
+| 第 5 篇 | 10-30 | 五子棋实战复盘：L3 以 pstack 式结构提供技能与服务 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-10-30-five-llm-l3-live-game-review.md |
+| 第 6 篇 | 10-30 | Grok 对 pstack 插件的分析（英文） | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-10-30-pstack-analysis-grok.md |
+| 第 7 篇 | 10-30 | 楚河象棋 L3 重构：用 Pi 原生 Skill / Package 承载业务知识 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-10-30-refactor-chinese-chess-pi-skills.md |
+| 第 8 篇 | 10-30 | Grok 谈五子棋的 pstack 式重构（英文） | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-10-30-refactor-five-llm-pstack-grok.md |
+| 第 9 篇 | 10-31 | 元 Harness 生成器（“Meta 啥”）的定位与形态 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-10-31-meta-harness-generator.md |
+| 第 10 篇 | 11-01 | 边牧任务桌面主界面改进 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-11-01-tilldone-desk-main-panel-ideas.md |
+| 第 11 篇 | 11-01 | 期权交易 Agent 项目讨论备忘 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-11-01-traing-agent-tilldone-pstack-claudetraingskills.md |
+| 第 12 篇 | 11-02 | 把 DSH Super-agent 融入四层 Pi Harness | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/discussions/2026-11-02-dsh-super-agent-merge-4-layers.md |
