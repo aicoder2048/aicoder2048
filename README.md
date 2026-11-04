@@ -1,6 +1,6 @@
 # aicoder2048 · 语音目录
 
-> **给 AI 助手（Grok 等）的说明**：用户通常在开车时用语音跟你交流，会用「编号」或「中文昵称」指代下面的 repo、应用和文件，比如「1 号第 3 课」「2 号象棋的白皮书」「五子棋第 2 篇」「讨论区第 7 篇」。
+> **给 AI 助手（Grok 等）的说明**：用户通常在开车时用语音跟你交流，会用「编号」或「中文昵称」指代下面的 repo、应用和文件，比如「1 号第 3 课」「2 号象棋的白皮书」「边牧第 3 课」「五子棋第 2 篇」「讨论区第 7 篇」。
 > 请直接用表里的 **raw 链接** 读取内容，不要再让用户拼写 repo 名或目录路径。
 > 语音识别可能把英文名听错：例如「Teardown / 提了顿」指的是 **TillDone**，「py / 派」指的是 **Pi**。
 > 本页的纯文本版：https://raw.githubusercontent.com/aicoder2048/aicoder2048/main/README.md
@@ -47,7 +47,24 @@
 
 | 篇 | 标题 | raw 链接 |
 |---|---|---|
-| 白皮书 | 边牧 · TillDone Desk 技术白皮书：两套四层结构、RPC 驱动的双循环、任务门禁 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/apps/tilldone/docs/tilldone-desk-whitepaper.md |
+| 白皮书 | 边牧 · TillDone Desk 技术白皮书：两套四层结构、RPC 驱动的双循环、任务门禁（v1.0，10-31，不含 PStack 部分） | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/apps/tilldone/docs/tilldone-desk-whitepaper.md |
+
+### 2-1 · 边牧课（互动课件）
+
+精读边牧的结构：两套四层、什么进模型的上下文、TillDone 原生任务拆分与 PStack 的分工。用户可能说「边牧课」「边牧第 3 课」。梳理原文是纯文本，最适合先读；它比白皮书新，包含 PStack 部分。
+
+| 课 | 标题 | raw 链接 |
+|---|---|---|
+| 梳理原文 | 边牧结构梳理：四层架构、上下文管理、TillDone 拆分与 PStack 的分工（11-03） | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/courseware/tilldone-desk/docs/articles/tilldone-desk-anatomy.md |
+| 目录 | 边牧结构精读总目录 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/courseware/tilldone-desk/lessons/index.html |
+| 第 1 课 | 边牧全景：羊、边牧与双循环 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/courseware/tilldone-desk/lessons/L01-overview.html |
+| 第 2 课 | 两套四层叠在一起 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/courseware/tilldone-desk/lessons/L02-two-four-layers.html |
+| 第 3 课 | 什么进模型的上下文 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/courseware/tilldone-desk/lessons/L03-what-enters-context.html |
+| 第 4 课 | 两种注入策略与抗压缩 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/courseware/tilldone-desk/lessons/L04-context-strategies.html |
+| 第 5 课 | TillDone 的原生拆分 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/courseware/tilldone-desk/lessons/L05-tilldone-split.html |
+| 第 6 课 | PStack 与 TillDone 的咬合 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/courseware/tilldone-desk/lessons/L06-pstack-meshing.html |
+| 第 7 课 | 坑、开放问题与全课复盘 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/courseware/tilldone-desk/lessons/L07-pitfalls-review.html |
+| 术语表 | 全课术语表 | https://raw.githubusercontent.com/aicoder2048/pi-vs-claude-code/main/courseware/tilldone-desk/lessons/glossary.html |
 
 ### 2-2 · 楚河 中国象棋的文档
 
